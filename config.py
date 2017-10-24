@@ -10,19 +10,30 @@ class Config:
     MAIL_SERVER = 'smtp.elasticemail.com'
     MAIL_PORT = 2525
     MAIL_USE_TLS = True
+    MAIL_DEFAULT_SENDER = 'no-reply@kernod.cn'
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+
+    SECURITY_PASSWORD_SALT = os.environ.get('SECRET_KEY') or os.urandom(64)
+    SECURITY_EMAIL_SENDER = 'no-reply@kernod.cn'
+    SECURITY_CONFIRMABLE = True
+    SECURITY_REGISTERABLE = True
+    SECURITY_RECOVERABLE = True
+    SECURITY_CHANGEABLE = True
+    SECURITY_TOKEN_MAX_AGE = 30 * 24 * 3600
+    # TODO: Figure this out
+    SECURITY_USER_IDENTITY_ATTRIBUTES = ['email', 'username']
 
     KERNOD_MAIL_SUBJECT_PREFIX = '[Kernod]'
     KERNOD_ADMIN = os.environ.get('KERNOD_ADMIN')
     KERNOD_POSTS_PER_PAGE = 20
     KERNOD_FOLLOWERS_PER_PAGE = 50
     KERNOD_COMMENTS_PER_PAGE = 30
-    KERNOD_CATALOGS = [
-        'Mathematics',
-        'Computer Science',
-        'Statistics'
-    ]
+    KERNOD_CATALOGS = {
+        'math': 'Mathematics',
+        'cs': 'Computer Science',
+        'stat': 'Statistics',
+    }
 
     @staticmethod
     def init_app(app):
@@ -43,8 +54,8 @@ class TestingConfig(Config):
 
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-        'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('PROD_DATABASE_URL') or \
+        'sqlite:///' + os.path.join(basedir, 'prod-data.sqlite')
 
 
 config = {

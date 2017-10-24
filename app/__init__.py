@@ -1,15 +1,16 @@
 from flask import Flask
 from flask_mail import Mail
 from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager
+from flask_migrate import Migrate
+from flask_security import Security
 
 from config import config
 
 
 mail = Mail()
 db = SQLAlchemy()
-login_manager = LoginManager()
-
+migrate = Migrate(db=db)
+security = Security()
 
 def create_app(config_name):
     app = Flask(__name__)
@@ -17,7 +18,10 @@ def create_app(config_name):
 
     mail.init_app(app)
     db.init_app(app)
-    login_manager.init_app(app)
+    migrate.init_app(app)
+
+    from app.services.security import user_datastore
+    security.init_app(app, datastore=user_datastore)
 
     from app.main import main
     app.register_blueprint(main)
