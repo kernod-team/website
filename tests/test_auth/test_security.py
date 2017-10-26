@@ -3,7 +3,7 @@ from flask_security.decorators import login_required
 from flask_security.utils import hash_password
 
 from app.auth.models import User
-from tests.test_bases import ViewBaseTestCase
+from tests.bases import ViewBaseTestCase
 
 
 class TestLogin(ViewBaseTestCase):

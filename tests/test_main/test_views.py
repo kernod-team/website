@@ -1,6 +1,6 @@
 from flask import url_for
 
-from tests.test_bases import ViewBaseTestCase
+from tests.bases import ViewBaseTestCase
 
 
 class TestIndex(ViewBaseTestCase):

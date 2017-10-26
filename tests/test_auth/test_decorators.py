@@ -2,7 +2,7 @@ from flask import url_for
 
 from app.auth.decorators import \
     catalog_roles_required, catalog_roles_accepted
-from tests.test_bases import DecoratorBaseTestCase
+from tests.bases import DecoratorBaseTestCase
 
 
 class TestCatalogRolesRequired(DecoratorBaseTestCase):
