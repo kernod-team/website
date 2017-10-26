@@ -3,7 +3,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY') or os.urandom(64)
+    SECRET_KEY = os.environ.get('SECRET_KEY') \
+                 or 'The-Platinum-Yendorian-Express-Card'
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
@@ -14,15 +15,15 @@ class Config:
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 
-    SECURITY_PASSWORD_SALT = os.environ.get('SECRET_KEY') or os.urandom(64)
+    SECURITY_BLUEPRINT_NAME = 'auth'
+    SECURITY_PASSWORD_SALT = SECRET_KEY
     SECURITY_EMAIL_SENDER = 'no-reply@kernod.cn'
+    SECURITY_UNAUTHORIZED_VIEW = None
     SECURITY_CONFIRMABLE = True
     SECURITY_REGISTERABLE = True
     SECURITY_RECOVERABLE = True
     SECURITY_CHANGEABLE = True
     SECURITY_TOKEN_MAX_AGE = 30 * 24 * 3600
-    # TODO: Figure this out
-    SECURITY_USER_IDENTITY_ATTRIBUTES = ['email', 'username']
 
     KERNOD_MAIL_SUBJECT_PREFIX = '[Kernod]'
     KERNOD_ADMIN = os.environ.get('KERNOD_ADMIN')
@@ -42,13 +43,16 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SECURITY_TOKEN_MAX_AGE = 30 * 24 * 3600
+    SECURITY_CONFIRMABLE = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
 
 
 class TestingConfig(Config):
     TESTING = True
+    SERVER_NAME = 'test-server-name'
+    SECURITY_CONFIRMABLE = False
+    WTF_CSRF_ENABLED = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'data-test.sqlite')
 
