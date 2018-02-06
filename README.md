@@ -7,14 +7,14 @@ A Q&A website for university students.
 ## Goals
 
 
-1. To build a helpful Q&A community.
+1. **To build a helpful Q&A community.**
 
    The Kernod website, or kernod.com, is essentially a platform for such a community. Our primary goal is to attract knowledgeable individuals and make them stick around, so that they can form an insightful community from which others can seek help. As long as the community produces quality content and thus maintains a good reputation, new users will come and stay. With the infusion of fresh blood, our community will keep growing and evolving. Furthermore, every rookie in this community will eventually become sophisticated enough to contribute back, further pushing the community towards excellence.
    
    Our rivals may steal our idea, site design, or even development team, but they cannot snap up our user base.
 
 
-2. To establish an ever-growing knowledge base.
+2. **To establish an ever-growing knowledge base.**
 
    The Stack Exchange Network aims to "build libraries of high-quality questions and answers". Likewise, after years of dedicated operation, the kernod website would have collected many great answers, which composes a so-called knowledge base. Consider it to be the integral of user contribution with respect to time, or a result of the intelligence of the community. 
    
