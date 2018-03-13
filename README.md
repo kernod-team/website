@@ -1,20 +1,20 @@
 # Kernod [![Codacy Badge][codacy-link]][codacy-image]
 
-A Q&A website for college students.
+A Q&A website for university students.
 
 
 
 ## Goals
 
 
-1. **To build a helpful Q&A community.**
+1. **To build a helpful Q&A community**
 
    I always wish I had an insightful and friendly community to browse and seek help from, especially when facing tricky problems. The purpose of the Kernod project is to built one. We'll bootstrap it by trying to attract knowledgeable individuals and make them stick around. Then, as long as the community keeps producing quality content and by doing so maintains a good reputation, new users will come and stay, so that the community can expand and evolve. Also, since new community members can learn a lot from the community, they'll eventually become sophisticated enough to contribute back, further pushing the community towards excellence.
    
    I would like to highlight that the heart of this project is the community itself, rather than a website, which is merely a supporting platform. Rivals can steal our idea, source code, or even development team, but they'll never snap up our user base.
 
 
-2. **To establish an ever-growing knowledge base.**
+2. **To establish an ever-growing knowledge base**
 
    The Stack Exchange Network, one of our models, aims to "build libraries of high-quality questions and answers". Likewise, after years of dedicated operation, we would've hopefully collected tons of great content from the community, which composes a considerable "knowledge base". This is the integral of user contribution with respect to time, and a result of the intelligence of the community. 
    
@@ -31,41 +31,43 @@ A Q&A website for college students.
 
 
 
-## TODO
+## Features (I mean Todo List)
 
 
 ### Core
 
-
-+ Authentication
-
-  Every serious website needs user authentication.
   
 + Ask & answer
 
-  The main purpose of a Q&A site
+  It's a Q&A site after all.
+
++ Authentication
+
+  Every self-respect website has user authentication.
   
 + Commenting
 
-  Too busy to answer an question but still have something to share? or can't fully understand an answer? Comment under it!
+  Too busy to answer an question but still have something to share? Need some elaboration on an answer? Don't agree with a fellow user? Feel free to leave a comment!
     
 + Searching
 
-  The knowledge base would be inaccessible without working search functionality.
+  A search functionality makes the knowledge base accessible.
 
 + Voting
 
-  A measure of post quality
+  Count of votes is a good estimation of post quality.
+
++ Moderating
+
+  We have to keep everything on the right track.
   
 + Tags
 
-  Grouping questions helps a lot.
+  Proper classification helps a lot, with the recommender system for example.
   
 + Gamification
 
-  + zorkmids, a.k.a. zm
-
-  + zm-related authorization
+  + Users can earn "zorkmids" (just a random name, also a reference to Nethack) by their participation. Presumably some sort of zorkmids-based authorization might be incentive.
   
 
 ### Enchantment
@@ -79,6 +81,9 @@ A Q&A website for college students.
   
   + Android app
   + iOS app
+
++ and more
+
 
 
  [codacy-link]: https://api.codacy.com/project/badge/Grade/1ee1384df38144f1b1e8cc7c7904268e
