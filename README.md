@@ -1,6 +1,6 @@
 # Kernod [![Codacy Badge][codacy-link]][codacy-image]
 
-A Q&A website for university students.
+A Q&A website for college students.
 
 
 
@@ -9,18 +9,18 @@ A Q&A website for university students.
 
 1. **To build a helpful Q&A community.**
 
-   The Kernod website, or kernod.com, is essentially a platform for such a community. Our primary goal is to attract knowledgeable individuals and make them stick around, so that they can form an insightful community from which others can seek help. As long as the community produces quality content and thus maintains a good reputation, new users will come and stay. With the infusion of fresh blood, our community will keep growing and evolving. Furthermore, every rookie in this community will eventually become sophisticated enough to contribute back, further pushing the community towards excellence.
+   I always wish I had an insightful and friendly community to browse and seek help from, especially when facing tricky problems. The purpose of the Kernod project is to built one. We'll bootstrap it by trying to attract knowledgeable individuals and make them stick around. Then, as long as the community keeps producing quality content and by doing so maintains a good reputation, new users will come and stay, so that the community can expand and evolve. Also, since new community members can learn a lot from the community, they'll eventually become sophisticated enough to contribute back, further pushing the community towards excellence.
    
-   Our rivals may steal our idea, site design, or even development team, but they cannot snap up our user base.
+   I would like to highlight that the heart of this project is the community itself, rather than a website, which is merely a supporting platform. Rivals can steal our idea, source code, or even development team, but they'll never snap up our user base.
 
 
 2. **To establish an ever-growing knowledge base.**
 
-   The Stack Exchange Network aims to "build libraries of high-quality questions and answers". Likewise, after years of dedicated operation, the kernod website would have collected many great answers, which composes a so-called knowledge base. Consider it to be the integral of user contribution with respect to time, or a result of the intelligence of the community. 
+   The Stack Exchange Network, one of our models, aims to "build libraries of high-quality questions and answers". Likewise, after years of dedicated operation, we would've hopefully collected tons of great content from the community, which composes a considerable "knowledge base". This is the integral of user contribution with respect to time, and a result of the intelligence of the community. 
    
-   Users of kernod.com are supposed to search through it before posting their questions, because chances are that a new question would resemble one or more answered ones in the knowledge base. For those who want to ask, this means easier access to inspiration (because you don't have to write up a new question and wait for responses); for those who answer, this means less duplicates and better experience.
+   To make good use of the knowledge base, users are requested to search through the knowledge base before posting new questions, because these are very likely to be restatements of some well-answered questions posted a long time ago. For those who want to ask for help, this procedure provides easier access to inspiration (because you don't have to write up a new question and wait for responses), while for the lifesavers, this means fewer duplicates and thus a better answering experience.
    
-    Note that the knowledge base is not merely a byproduct. Instead, it's second only to the community itself in importance from my perspective.
+    Note that the knowledge base is more than a byproduct. Instead, it's second only to the community in importance in my opinion.
 
 
 
